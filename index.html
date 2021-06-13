@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Update form</title>
+    <style> 
+    span{
+        color: red;
+    }
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    *{
+margin: 3px, 1px, 1px;
+    }
+    </style>
+</head>
+<body>
+    <div style="background-color: rgba(240, 221, 184);">
+        <div style="background-color: brown; color: white"> 
+            <h5 style="text-align: center">Request for the new pan card or changes or corrections</h5>
+            <p style="font-style: italic; text-align: center">Fields marked with <span>*</span>(asterisk) are mandatory</p>
+            <span></span>
+        </div>
+<div style="font-weight: bold;">
+    <table style="width: 100%;">
+        <tr>
+            <td></td>
+            <td colspan="2">
+            <p style="display:inline;"><span>*</span>Whether citizen of India</p>
+            <div style="display:inline;">
+            <label for="yes" style="padding-left: 60px;">Yes</label>
+            <input type="radio"id="yes">
+            <label for="no"style="padding-left: 20px;">No</label>
+            <input type="radio"id="no">
+            </div>    
+        </td>
+        </tr>
+        <tr>
+        <td></td>
+            <td colspan="2">
+                <label for="pan"><span>*</span>Permantent Account Number(PAN)</label>
+                <input type="text" name="" id="pan">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="" id="" style="margin:3px 1px 3px 1px">
+            </td>
+            <td colspan="2">
+              <span>*</span> 1.Name
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2">
+                <p style="display: inline">Title</p>
+                <div style="display: inline;">
+                    <label for="yes" style="padding-left: 60px;">Shri/Mr</label>
+            <input type="radio"id="yes">
+            <label for="no"style="padding-left: 20px;">Smt./Mrs.</label>
+            <input type="radio"id="no">
+            <label for="no"style="padding-left: 20px;">Kumari/Ms</label>
+            <input type="radio"id="no">
+                
+                
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2">
+               <label for="lname" style="padding-right:100px;">Last Name/Surname</label><br>
+                
+                <label for="fname"style="padding-right:20px;>First Name</label>
+              
+                
+                
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+    </div>
+
+</body>
+</html>
