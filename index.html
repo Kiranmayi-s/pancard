@@ -44,7 +44,7 @@ margin: 3px, 1px, 3px, 1px;
                 <input type="text" name="" id="pan" required></td>
         </tr>
         <tr>
-            <td><input type="checkbox" name="" id="" style="margin:3px 1px 3px 1px"></td>
+            <td><input type="checkbox" name="name" id="name" style="margin:3px 1px 3px 1px"></td>
             <td colspan="2"><span>*</span> 1.Name</td>
         </tr>
         <tr>
@@ -62,11 +62,11 @@ margin: 3px, 1px, 3px, 1px;
             <td></td>
             <td colspan="2"><div style="display: inline;">
                 <label for="1name" style="padding-left:1px ;" >Last Name/Surname</label>
-                <label for="mname" style="padding-left:340px ;" >First Name</label>
-                <label for="2name" style="padding-left:369px ;" >Middle Name</label><br>
+                <label for="fname" style="padding-left:340px ;" >First Name</label>
+                <label for="mname" style="padding-left:369px ;" >Middle Name</label><br>
                 <input type="text" id="1name" name="fname"; required >
-                <input type="text" id="mname"  name ="mname" style="position:absolute;right:840px;" required >
-                <input type="text" id="2name"name="lname" style="position:absolute;right:390px;"></div></td> 
+                <input type="text" id="fname"  name ="mname" style="position:absolute;right:840px;" required >
+                <input type="text" id="mname"name="lname" style="position:absolute;right:390px;"></div></td> 
         </tr>
         <tr>
             <td></td>
@@ -99,12 +99,12 @@ margin: 3px, 1px, 3px, 1px;
         </tr>
         <tr>
             <td></td>
-            <td colspan="2"><div style="display: inline;"><label for="1name" style="padding-left:1px ;" >Last Name/Surname</label>
-                <label for="mname" style="padding-left:340px ;" >First Name</label>
-                <label for="2name" style="padding-left:369px ;" >Middle Name</label><br>
-                <input type="text" id="1name" name="fname" required >
-                <input type="text" id="mname"  name ="mname" style="position:absolute;right:840px;" required>
-                <input type="text" id="2name"name="lname" style="position:absolute;right:390px;"></div> </td>  
+            <td colspan="2"><div style="display: inline;"><label for="lastname" style="padding-left:1px ;" >Last Name/Surname</label>
+                <label for="firstname" style="padding-left:340px ;" >First Name</label>
+                <label for="middlename" style="padding-left:369px ;" >Middle Name</label><br>
+                <input type="text" id="1name" name="lastname" required >
+                <input type="text" id="mname"  name ="firstname" style="position:absolute;right:840px;" required>
+                <input type="text" id="2name"name="middlename" style="position:absolute;right:390px;"></div> </td>  
         </tr>
         <tr>
             <td><input type="checkbox" name="" id="" style="margin:3px 1px 3px 1px"></td>
@@ -114,11 +114,11 @@ margin: 3px, 1px, 3px, 1px;
             <td></td>
             <td colspan="2"><div style="display: inline;">
                 <label for="1name" style="padding-left:1px ;" >Last Name/Surname</label>
-                <label for="mname" style="padding-left:340px ;" >First Name</label>
-                <label for="2name" style="padding-left:369px ;" >Middle Name</label><br>
+                <label for="2name" style="padding-left:340px ;" >First Name</label>
+                <label for="3name" style="padding-left:369px ;" >Middle Name</label><br>
                 <input type="text" id="1name" name="fname">
-                <input type="text" id="mname"  name ="mname" style="position:absolute;right:840px;">
-                <input type="text" id="2name"name="lname" style="position:absolute;right:390px;"></div></td>  
+                <input type="text" id="2name"  name ="mname" style="position:absolute;right:840px;">
+                <input type="text" id="3name"name="lname" style="position:absolute;right:390px;"></div></td>  
         </tr>
         <tr>
             <td></td>
@@ -222,7 +222,7 @@ margin: 3px, 1px, 3px, 1px;
         <tr>
            <td></td>
            <td><label>Zip</label></td>
-           <td><input type="name" name = "gen" id="yes"></td>
+           <td><input type="text" id="" disabled="disabled"></td>
         </tr>
         <tr>
             <td><input type="checkbox" name="" id="" style="margin:3px 1px 3px 1px"></td>
@@ -330,7 +330,9 @@ margin: 3px, 1px, 3px, 1px;
                 <option value="044">Mark sheet</option>
                 <option value="055">EB Card</option></select>                                                           
                 <label style="font-weight: lighter;"> as proof </label><br>
-                <label style="font-weight: lighter;">of identity, <select id="mm" style="width:  1250px;">
+                <label style="font-weight: lighter;">of identity, 
+                    
+                <select id="mm" style="width:  1250px;">
                 <option name="Please Select">--Please Select--</option>
                 <option value="India">Aadhaar card</option>
                 <option value="Ration Card">Ration Card</option>
@@ -388,13 +390,18 @@ margin: 3px, 1px, 3px, 1px;
                  <label for="no">No</label><br>
                  <input type="radio"id="yes" name="dsc">
                  <label for="yes"> DSC </label><select id="mm" style="width:  170px;">
+
             <option name="Please Select">--Please Select--</option>
+
             <option value="Digital Signature Certificate">Digital Signature Certificate</option></select>
+
                   <label style="color: brown; padding-left: 30px;"><u>Guidelines for DSC user</u></label><br>
                   <label>Upload Photo</label><label style="padding-left: 100px;"><input type="file" name="imag" id="kkk" accept=".jpg" style="padding-left: 400px;"></label>
                   <label style="padding-left: 100px;"> Upload Signature </label><label style="padding-left: 50px;"><input type="file" name="imag" id="kkk" accept=".jpg" style="padding-left: 10px;"></label><br><br>
                   <label>Upload Document</label><label style="padding-left: 470px;"><input type="file" name="pdf" id="kkk" accept=".pdf" style="padding-left: 2px;"></label><br>
+
                 <label><a href="https://digilocker.gov.in/"><button style="color: rgb(96, 55, 161); font-weight: bold; font-size: 12px;" type="button"><img width="15px" height="15px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_XhiK0NfA1pFCm2oyhLJCufjsrOtBWukKw&usqp=CAU" /> Fetch from Digilocker</button></a></label><br><br>
+                
                   <label>ALREADY UPLOADED PHOTO:</label><label style="padding-left: 370px;"><input type="text" name="" style="padding-right: 150px;"name="" id="pan";></label><br><br>
                   <label>ALREADY UPLOADED SIGNATURE:</label><label style="padding-left: 335px;"><input type="text" name="" id="pan";></label><br><br>
                   <label>ALREADY UPLOADED DOCUMENTS:</label><label style="padding-left: 325px;"><input type="text" name="" id="pan" style="padding-right: 250px; padding-bottom: 100px;"></label><br>
@@ -404,5 +411,3 @@ margin: 3px, 1px, 3px, 1px;
         <script> function output() {alert ("Thank you for submitting")} </script>
     </body>
 </html>
-
-
